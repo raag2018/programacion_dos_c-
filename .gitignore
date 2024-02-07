@@ -23,11 +23,11 @@
 **/node_modules/
 **/bower_components/
 */Performance/*TestResults.txt
-**/bin
+**../../bin
 **/obj
 **/*.log.1
 **/*.log.*
 *.log
 *.db
-.vs/
+../../vs/
 Publish/
