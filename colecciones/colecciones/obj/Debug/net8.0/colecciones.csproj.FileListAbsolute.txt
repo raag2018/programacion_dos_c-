@@ -1,0 +1,15 @@
+C:\Users\rober\source\repos\colecciones\colecciones\bin\Debug\net8.0\colecciones.exe
+C:\Users\rober\source\repos\colecciones\colecciones\bin\Debug\net8.0\colecciones.deps.json
+C:\Users\rober\source\repos\colecciones\colecciones\bin\Debug\net8.0\colecciones.runtimeconfig.json
+C:\Users\rober\source\repos\colecciones\colecciones\bin\Debug\net8.0\colecciones.dll
+C:\Users\rober\source\repos\colecciones\colecciones\bin\Debug\net8.0\colecciones.pdb
+C:\Users\rober\source\repos\colecciones\colecciones\obj\Debug\net8.0\colecciones.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rober\source\repos\colecciones\colecciones\obj\Debug\net8.0\colecciones.AssemblyInfoInputs.cache
+C:\Users\rober\source\repos\colecciones\colecciones\obj\Debug\net8.0\colecciones.AssemblyInfo.cs
+C:\Users\rober\source\repos\colecciones\colecciones\obj\Debug\net8.0\colecciones.csproj.CoreCompileInputs.cache
+C:\Users\rober\source\repos\colecciones\colecciones\obj\Debug\net8.0\colecciones.sourcelink.json
+C:\Users\rober\source\repos\colecciones\colecciones\obj\Debug\net8.0\colecciones.dll
+C:\Users\rober\source\repos\colecciones\colecciones\obj\Debug\net8.0\refint\colecciones.dll
+C:\Users\rober\source\repos\colecciones\colecciones\obj\Debug\net8.0\colecciones.pdb
+C:\Users\rober\source\repos\colecciones\colecciones\obj\Debug\net8.0\colecciones.genruntimeconfig.cache
+C:\Users\rober\source\repos\colecciones\colecciones\obj\Debug\net8.0\ref\colecciones.dll
