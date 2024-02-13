@@ -1,0 +1,15 @@
+C:\Users\rober\source\repos\AppQueue\AppQueue\bin\Debug\net8.0\AppQueue.exe
+C:\Users\rober\source\repos\AppQueue\AppQueue\bin\Debug\net8.0\AppQueue.deps.json
+C:\Users\rober\source\repos\AppQueue\AppQueue\bin\Debug\net8.0\AppQueue.runtimeconfig.json
+C:\Users\rober\source\repos\AppQueue\AppQueue\bin\Debug\net8.0\AppQueue.dll
+C:\Users\rober\source\repos\AppQueue\AppQueue\bin\Debug\net8.0\AppQueue.pdb
+C:\Users\rober\source\repos\AppQueue\AppQueue\obj\Debug\net8.0\AppQueue.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rober\source\repos\AppQueue\AppQueue\obj\Debug\net8.0\AppQueue.AssemblyInfoInputs.cache
+C:\Users\rober\source\repos\AppQueue\AppQueue\obj\Debug\net8.0\AppQueue.AssemblyInfo.cs
+C:\Users\rober\source\repos\AppQueue\AppQueue\obj\Debug\net8.0\AppQueue.csproj.CoreCompileInputs.cache
+C:\Users\rober\source\repos\AppQueue\AppQueue\obj\Debug\net8.0\AppQueue.sourcelink.json
+C:\Users\rober\source\repos\AppQueue\AppQueue\obj\Debug\net8.0\AppQueue.dll
+C:\Users\rober\source\repos\AppQueue\AppQueue\obj\Debug\net8.0\refint\AppQueue.dll
+C:\Users\rober\source\repos\AppQueue\AppQueue\obj\Debug\net8.0\AppQueue.pdb
+C:\Users\rober\source\repos\AppQueue\AppQueue\obj\Debug\net8.0\AppQueue.genruntimeconfig.cache
+C:\Users\rober\source\repos\AppQueue\AppQueue\obj\Debug\net8.0\ref\AppQueue.dll
