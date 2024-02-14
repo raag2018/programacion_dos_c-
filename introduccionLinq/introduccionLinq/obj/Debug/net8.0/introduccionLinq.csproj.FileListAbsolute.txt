@@ -1,0 +1,15 @@
+C:\Users\rober\source\repos\introduccionLinq\introduccionLinq\bin\Debug\net8.0\introduccionLinq.exe
+C:\Users\rober\source\repos\introduccionLinq\introduccionLinq\bin\Debug\net8.0\introduccionLinq.deps.json
+C:\Users\rober\source\repos\introduccionLinq\introduccionLinq\bin\Debug\net8.0\introduccionLinq.runtimeconfig.json
+C:\Users\rober\source\repos\introduccionLinq\introduccionLinq\bin\Debug\net8.0\introduccionLinq.dll
+C:\Users\rober\source\repos\introduccionLinq\introduccionLinq\bin\Debug\net8.0\introduccionLinq.pdb
+C:\Users\rober\source\repos\introduccionLinq\introduccionLinq\obj\Debug\net8.0\introduccionLinq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rober\source\repos\introduccionLinq\introduccionLinq\obj\Debug\net8.0\introduccionLinq.AssemblyInfoInputs.cache
+C:\Users\rober\source\repos\introduccionLinq\introduccionLinq\obj\Debug\net8.0\introduccionLinq.AssemblyInfo.cs
+C:\Users\rober\source\repos\introduccionLinq\introduccionLinq\obj\Debug\net8.0\introduccionLinq.csproj.CoreCompileInputs.cache
+C:\Users\rober\source\repos\introduccionLinq\introduccionLinq\obj\Debug\net8.0\introduccionLinq.sourcelink.json
+C:\Users\rober\source\repos\introduccionLinq\introduccionLinq\obj\Debug\net8.0\introduccionLinq.dll
+C:\Users\rober\source\repos\introduccionLinq\introduccionLinq\obj\Debug\net8.0\refint\introduccionLinq.dll
+C:\Users\rober\source\repos\introduccionLinq\introduccionLinq\obj\Debug\net8.0\introduccionLinq.pdb
+C:\Users\rober\source\repos\introduccionLinq\introduccionLinq\obj\Debug\net8.0\introduccionLinq.genruntimeconfig.cache
+C:\Users\rober\source\repos\introduccionLinq\introduccionLinq\obj\Debug\net8.0\ref\introduccionLinq.dll
