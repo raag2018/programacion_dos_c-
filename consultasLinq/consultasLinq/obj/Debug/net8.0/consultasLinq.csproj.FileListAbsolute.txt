@@ -1,0 +1,15 @@
+C:\Users\rober\source\repos\consultasLinq\consultasLinq\bin\Debug\net8.0\consultasLinq.exe
+C:\Users\rober\source\repos\consultasLinq\consultasLinq\bin\Debug\net8.0\consultasLinq.deps.json
+C:\Users\rober\source\repos\consultasLinq\consultasLinq\bin\Debug\net8.0\consultasLinq.runtimeconfig.json
+C:\Users\rober\source\repos\consultasLinq\consultasLinq\bin\Debug\net8.0\consultasLinq.dll
+C:\Users\rober\source\repos\consultasLinq\consultasLinq\bin\Debug\net8.0\consultasLinq.pdb
+C:\Users\rober\source\repos\consultasLinq\consultasLinq\obj\Debug\net8.0\consultasLinq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rober\source\repos\consultasLinq\consultasLinq\obj\Debug\net8.0\consultasLinq.AssemblyInfoInputs.cache
+C:\Users\rober\source\repos\consultasLinq\consultasLinq\obj\Debug\net8.0\consultasLinq.AssemblyInfo.cs
+C:\Users\rober\source\repos\consultasLinq\consultasLinq\obj\Debug\net8.0\consultasLinq.csproj.CoreCompileInputs.cache
+C:\Users\rober\source\repos\consultasLinq\consultasLinq\obj\Debug\net8.0\consultasLinq.sourcelink.json
+C:\Users\rober\source\repos\consultasLinq\consultasLinq\obj\Debug\net8.0\consultasLinq.dll
+C:\Users\rober\source\repos\consultasLinq\consultasLinq\obj\Debug\net8.0\refint\consultasLinq.dll
+C:\Users\rober\source\repos\consultasLinq\consultasLinq\obj\Debug\net8.0\consultasLinq.pdb
+C:\Users\rober\source\repos\consultasLinq\consultasLinq\obj\Debug\net8.0\consultasLinq.genruntimeconfig.cache
+C:\Users\rober\source\repos\consultasLinq\consultasLinq\obj\Debug\net8.0\ref\consultasLinq.dll
