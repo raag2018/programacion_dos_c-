@@ -1,0 +1,15 @@
+C:\Users\rober\source\repos\JoinsLinq\JoinsLinq\bin\Debug\net8.0\JoinsLinq.exe
+C:\Users\rober\source\repos\JoinsLinq\JoinsLinq\bin\Debug\net8.0\JoinsLinq.deps.json
+C:\Users\rober\source\repos\JoinsLinq\JoinsLinq\bin\Debug\net8.0\JoinsLinq.runtimeconfig.json
+C:\Users\rober\source\repos\JoinsLinq\JoinsLinq\bin\Debug\net8.0\JoinsLinq.dll
+C:\Users\rober\source\repos\JoinsLinq\JoinsLinq\bin\Debug\net8.0\JoinsLinq.pdb
+C:\Users\rober\source\repos\JoinsLinq\JoinsLinq\obj\Debug\net8.0\JoinsLinq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rober\source\repos\JoinsLinq\JoinsLinq\obj\Debug\net8.0\JoinsLinq.AssemblyInfoInputs.cache
+C:\Users\rober\source\repos\JoinsLinq\JoinsLinq\obj\Debug\net8.0\JoinsLinq.AssemblyInfo.cs
+C:\Users\rober\source\repos\JoinsLinq\JoinsLinq\obj\Debug\net8.0\JoinsLinq.csproj.CoreCompileInputs.cache
+C:\Users\rober\source\repos\JoinsLinq\JoinsLinq\obj\Debug\net8.0\JoinsLinq.sourcelink.json
+C:\Users\rober\source\repos\JoinsLinq\JoinsLinq\obj\Debug\net8.0\JoinsLinq.dll
+C:\Users\rober\source\repos\JoinsLinq\JoinsLinq\obj\Debug\net8.0\refint\JoinsLinq.dll
+C:\Users\rober\source\repos\JoinsLinq\JoinsLinq\obj\Debug\net8.0\JoinsLinq.pdb
+C:\Users\rober\source\repos\JoinsLinq\JoinsLinq\obj\Debug\net8.0\JoinsLinq.genruntimeconfig.cache
+C:\Users\rober\source\repos\JoinsLinq\JoinsLinq\obj\Debug\net8.0\ref\JoinsLinq.dll
