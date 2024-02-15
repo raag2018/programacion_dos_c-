@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JoinsLinq")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07e8d4e9636d1f9ec00b58bd52768c722f8c079b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28526983d6d2c6682ed21d0ddf11cea801a3042a")]
 [assembly: System.Reflection.AssemblyProductAttribute("JoinsLinq")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JoinsLinq")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

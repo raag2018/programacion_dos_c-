@@ -46,3 +46,46 @@ var consultaJoin = from estudiante in estudiantes
 foreach (var item in consultaJoin){
     Console.WriteLine($"Estudiante: {item.EstudianteNombre}, Curso: {item.CursoNombre}");
 }
+Console.WriteLine("********************************");
+Console.WriteLine("UTILIZANDO INTO");
+// Definir una lista de números
+List<int> numeros = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+// Consulta con la cláusula into
+var consultaInto =
+    from numero in numeros
+    group numero by numero % 2 == 0 into grupos
+    select new
+    {
+        EsPar = grupos.Key,
+        Numeros = grupos.ToList()
+    };
+// Mostrar resultados
+foreach (var grupo in consultaInto){
+    if (grupo.EsPar){
+        Console.WriteLine("Números pares:");
+    }
+    else{
+        Console.WriteLine("Números impares:");
+    }
+    foreach (var numero in grupo.Numeros){
+        Console.WriteLine(numero);
+    }
+}
+Console.WriteLine("********************************");
+Console.WriteLine("UTILIZANDO LET");
+// Consulta con la cláusula let
+var consultaLet =
+    from numero in numeros
+    let cuadrado = numero * numero
+    let cubo = numero * numero * numero
+    select new
+    {
+        Numero = numero,
+        Cuadrado = cuadrado,
+        Cubo = cubo
+    };
+// Mostrar resultados
+foreach (var resultado in consultaLet){
+    Console.WriteLine($"Número: {resultado.Numero}, Cuadrado: {resultado.Cuadrado}, Cubo: {resultado.Cubo}");
+}
