@@ -1,0 +1,15 @@
+C:\Users\rober\source\repos\funcionesDeCadena\funcionesDeCadena\bin\Debug\net8.0\funcionesDeCadena.exe
+C:\Users\rober\source\repos\funcionesDeCadena\funcionesDeCadena\bin\Debug\net8.0\funcionesDeCadena.deps.json
+C:\Users\rober\source\repos\funcionesDeCadena\funcionesDeCadena\bin\Debug\net8.0\funcionesDeCadena.runtimeconfig.json
+C:\Users\rober\source\repos\funcionesDeCadena\funcionesDeCadena\bin\Debug\net8.0\funcionesDeCadena.dll
+C:\Users\rober\source\repos\funcionesDeCadena\funcionesDeCadena\bin\Debug\net8.0\funcionesDeCadena.pdb
+C:\Users\rober\source\repos\funcionesDeCadena\funcionesDeCadena\obj\Debug\net8.0\funcionesDeCadena.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rober\source\repos\funcionesDeCadena\funcionesDeCadena\obj\Debug\net8.0\funcionesDeCadena.AssemblyInfoInputs.cache
+C:\Users\rober\source\repos\funcionesDeCadena\funcionesDeCadena\obj\Debug\net8.0\funcionesDeCadena.AssemblyInfo.cs
+C:\Users\rober\source\repos\funcionesDeCadena\funcionesDeCadena\obj\Debug\net8.0\funcionesDeCadena.csproj.CoreCompileInputs.cache
+C:\Users\rober\source\repos\funcionesDeCadena\funcionesDeCadena\obj\Debug\net8.0\funcionesDeCadena.sourcelink.json
+C:\Users\rober\source\repos\funcionesDeCadena\funcionesDeCadena\obj\Debug\net8.0\funcionesDeCadena.dll
+C:\Users\rober\source\repos\funcionesDeCadena\funcionesDeCadena\obj\Debug\net8.0\refint\funcionesDeCadena.dll
+C:\Users\rober\source\repos\funcionesDeCadena\funcionesDeCadena\obj\Debug\net8.0\funcionesDeCadena.pdb
+C:\Users\rober\source\repos\funcionesDeCadena\funcionesDeCadena\obj\Debug\net8.0\funcionesDeCadena.genruntimeconfig.cache
+C:\Users\rober\source\repos\funcionesDeCadena\funcionesDeCadena\obj\Debug\net8.0\ref\funcionesDeCadena.dll
