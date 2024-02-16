@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\edwin\\OneDrive\\Escritorio\\bryan\\programacion_dos_c-\\proyectoUnidadUno\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4574B197-38CA-48E3-A108-8814B6036002}|proyectoUnidadUno\\proyectoUnidadUno.csproj|c:\\users\\edwin\\onedrive\\escritorio\\bryan\\programacion_dos_c-\\proyectounidaduno\\proyectounidaduno\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4574B197-38CA-48E3-A108-8814B6036002}|proyectoUnidadUno\\proyectoUnidadUno.csproj|solutionrelative:proyectounidaduno\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4574B197-38CA-48E3-A108-8814B6036002}|proyectoUnidadUno\\proyectoUnidadUno.csproj|c:\\users\\edwin\\onedrive\\escritorio\\bryan\\programacion_dos_c-\\proyectounidaduno\\proyectounidaduno\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4574B197-38CA-48E3-A108-8814B6036002}|proyectoUnidadUno\\proyectoUnidadUno.csproj|solutionrelative:proyectounidaduno\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,6 +23,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\edwin\\OneDrive\\Escritorio\\bryan\\programacion_dos_c-\\proyectoUnidadUno\\proyectoUnidadUno\\Book.cs",
+              "RelativeDocumentMoniker": "proyectoUnidadUno\\Book.cs",
+              "ToolTip": "C:\\Users\\edwin\\OneDrive\\Escritorio\\bryan\\programacion_dos_c-\\proyectoUnidadUno\\proyectoUnidadUno\\Book.cs",
+              "RelativeToolTip": "proyectoUnidadUno\\Book.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-16T15:12:37.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\edwin\\OneDrive\\Escritorio\\bryan\\programacion_dos_c-\\proyectoUnidadUno\\proyectoUnidadUno\\Program.cs",
               "RelativeDocumentMoniker": "proyectoUnidadUno\\Program.cs",
@@ -28,10 +45,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-16T14:38:54.651Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
