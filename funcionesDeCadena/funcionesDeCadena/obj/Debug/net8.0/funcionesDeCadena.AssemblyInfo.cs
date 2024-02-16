@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("funcionesDeCadena")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32ba3a51588b69a876db5fe4f9fb1dd3d85bc2f0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62268b0af9356928c605aebbbaa3c7e39cec4130")]
 [assembly: System.Reflection.AssemblyProductAttribute("funcionesDeCadena")]
 [assembly: System.Reflection.AssemblyTitleAttribute("funcionesDeCadena")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
