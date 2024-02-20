@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-  <Itemgroup>
-   <Content Include="libros.json"/>
   <ItemGroup>
+   <Content Include="libros.json"/>
+  </ItemGroup>
 </Project>
