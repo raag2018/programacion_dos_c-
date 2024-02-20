@@ -1,0 +1,15 @@
+C:\Users\rober\source\repos\utilizandoFechas\utilizandoFechas\bin\Debug\net8.0\utilizandoFechas.exe
+C:\Users\rober\source\repos\utilizandoFechas\utilizandoFechas\bin\Debug\net8.0\utilizandoFechas.deps.json
+C:\Users\rober\source\repos\utilizandoFechas\utilizandoFechas\bin\Debug\net8.0\utilizandoFechas.runtimeconfig.json
+C:\Users\rober\source\repos\utilizandoFechas\utilizandoFechas\bin\Debug\net8.0\utilizandoFechas.dll
+C:\Users\rober\source\repos\utilizandoFechas\utilizandoFechas\bin\Debug\net8.0\utilizandoFechas.pdb
+C:\Users\rober\source\repos\utilizandoFechas\utilizandoFechas\obj\Debug\net8.0\utilizandoFechas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rober\source\repos\utilizandoFechas\utilizandoFechas\obj\Debug\net8.0\utilizandoFechas.AssemblyInfoInputs.cache
+C:\Users\rober\source\repos\utilizandoFechas\utilizandoFechas\obj\Debug\net8.0\utilizandoFechas.AssemblyInfo.cs
+C:\Users\rober\source\repos\utilizandoFechas\utilizandoFechas\obj\Debug\net8.0\utilizandoFechas.csproj.CoreCompileInputs.cache
+C:\Users\rober\source\repos\utilizandoFechas\utilizandoFechas\obj\Debug\net8.0\utilizandoFechas.sourcelink.json
+C:\Users\rober\source\repos\utilizandoFechas\utilizandoFechas\obj\Debug\net8.0\utilizandoFechas.dll
+C:\Users\rober\source\repos\utilizandoFechas\utilizandoFechas\obj\Debug\net8.0\refint\utilizandoFechas.dll
+C:\Users\rober\source\repos\utilizandoFechas\utilizandoFechas\obj\Debug\net8.0\utilizandoFechas.pdb
+C:\Users\rober\source\repos\utilizandoFechas\utilizandoFechas\obj\Debug\net8.0\utilizandoFechas.genruntimeconfig.cache
+C:\Users\rober\source\repos\utilizandoFechas\utilizandoFechas\obj\Debug\net8.0\ref\utilizandoFechas.dll
