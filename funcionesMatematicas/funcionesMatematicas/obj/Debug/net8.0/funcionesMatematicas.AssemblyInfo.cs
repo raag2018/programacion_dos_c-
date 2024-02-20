@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("AppQueue")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("funcionesMatematicas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c99c5c2899fcfa6eee432bdb3bb20ae1b6c7a3de")]
-[assembly: System.Reflection.AssemblyProductAttribute("AppQueue")]
-[assembly: System.Reflection.AssemblyTitleAttribute("AppQueue")]
+[assembly: System.Reflection.AssemblyProductAttribute("funcionesMatematicas")]
+[assembly: System.Reflection.AssemblyTitleAttribute("funcionesMatematicas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.

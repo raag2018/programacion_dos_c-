@@ -1,0 +1,15 @@
+C:\Users\rober\source\repos\funcionesMatematicas\funcionesMatematicas\bin\Debug\net8.0\funcionesMatematicas.exe
+C:\Users\rober\source\repos\funcionesMatematicas\funcionesMatematicas\bin\Debug\net8.0\funcionesMatematicas.deps.json
+C:\Users\rober\source\repos\funcionesMatematicas\funcionesMatematicas\bin\Debug\net8.0\funcionesMatematicas.runtimeconfig.json
+C:\Users\rober\source\repos\funcionesMatematicas\funcionesMatematicas\bin\Debug\net8.0\funcionesMatematicas.dll
+C:\Users\rober\source\repos\funcionesMatematicas\funcionesMatematicas\bin\Debug\net8.0\funcionesMatematicas.pdb
+C:\Users\rober\source\repos\funcionesMatematicas\funcionesMatematicas\obj\Debug\net8.0\funcionesMatematicas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rober\source\repos\funcionesMatematicas\funcionesMatematicas\obj\Debug\net8.0\funcionesMatematicas.AssemblyInfoInputs.cache
+C:\Users\rober\source\repos\funcionesMatematicas\funcionesMatematicas\obj\Debug\net8.0\funcionesMatematicas.AssemblyInfo.cs
+C:\Users\rober\source\repos\funcionesMatematicas\funcionesMatematicas\obj\Debug\net8.0\funcionesMatematicas.csproj.CoreCompileInputs.cache
+C:\Users\rober\source\repos\funcionesMatematicas\funcionesMatematicas\obj\Debug\net8.0\funcionesMatematicas.sourcelink.json
+C:\Users\rober\source\repos\funcionesMatematicas\funcionesMatematicas\obj\Debug\net8.0\funcionesMatematicas.dll
+C:\Users\rober\source\repos\funcionesMatematicas\funcionesMatematicas\obj\Debug\net8.0\refint\funcionesMatematicas.dll
+C:\Users\rober\source\repos\funcionesMatematicas\funcionesMatematicas\obj\Debug\net8.0\funcionesMatematicas.pdb
+C:\Users\rober\source\repos\funcionesMatematicas\funcionesMatematicas\obj\Debug\net8.0\funcionesMatematicas.genruntimeconfig.cache
+C:\Users\rober\source\repos\funcionesMatematicas\funcionesMatematicas\obj\Debug\net8.0\ref\funcionesMatematicas.dll
