@@ -17,4 +17,4 @@ C:\Users\rober\source\repos\proyectoUnidadTres\proyectoUnidadTres\obj\Debug\proy
 C:\Users\rober\source\repos\proyectoUnidadTres\proyectoUnidadTres\obj\Debug\proyectoUnidadTres.csproj.CopyComplete
 C:\Users\rober\source\repos\proyectoUnidadTres\proyectoUnidadTres\obj\Debug\proyectoUnidadTres.exe
 C:\Users\rober\source\repos\proyectoUnidadTres\proyectoUnidadTres\obj\Debug\proyectoUnidadTres.pdb
-C:\Users\rober\source\repos\proyectoUnidadTres\proyectoUnidadTres\obj\Debug\proyectoUnidadTres.Frm_Aeticulos.resources
+C:\Users\rober\source\repos\proyectoUnidadTres\proyectoUnidadTres\obj\Debug\proyectoUnidadTres.Frm_Articulos.resources

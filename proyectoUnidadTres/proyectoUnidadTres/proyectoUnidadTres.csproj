@@ -65,17 +65,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Frm_Aeticulos.cs">
+    <Compile Include="Frm_Articulos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Aeticulos.Designer.cs">
-      <DependentUpon>Frm_Aeticulos.cs</DependentUpon>
+    <Compile Include="Frm_Articulos.Designer.cs">
+      <DependentUpon>Frm_Articulos.cs</DependentUpon>
     </Compile>
     <Compile Include="Logica\Conexion.cs" />
+    <Compile Include="Logica\DbContextArticulo.cs" />
+    <Compile Include="Model\Articulo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Frm_Aeticulos.resx">
-      <DependentUpon>Frm_Aeticulos.cs</DependentUpon>
+    <EmbeddedResource Include="Frm_Articulos.resx">
+      <DependentUpon>Frm_Articulos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -87,7 +89,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="db_tarea.db">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

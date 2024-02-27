@@ -16,7 +16,7 @@ namespace proyectoUnidadTres
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_Aeticulos());
+            Application.Run(new Frm_Articulos());
         }
     }
 }
