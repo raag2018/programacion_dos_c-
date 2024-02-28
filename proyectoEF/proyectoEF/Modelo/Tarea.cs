@@ -17,7 +17,7 @@ namespace proyectoEF.Modelo{
         //[NotMapped]
         public string Resumen {  get; set; }
     }
-}
-public enum Prioridad{
-    Baja, Media, Alta
+    public enum Prioridad{
+        Baja, Media, Alta
+    }
 }
