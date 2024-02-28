@@ -4,7 +4,7 @@ using proyectoEF.Context;
 var builder = WebApplication.CreateBuilder(args);
 // Registra el contexto de la base de datos usando SQL Server
 builder.Services.AddDbContext<TareasContext>(options =>
-    options.UseSqlServer(@"Data Source=ROBERT\UNAB;Initial Catalog=TareasDb;User ID=sa;Password=unab;TrustServerCertificate=True"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("cnTareas")));
 var app = builder.Build();
 app.MapGet("/", () => "Hello World!");
 app.MapGet("/dbconexion", async ([FromServices] TareasContext dbContext) =>
