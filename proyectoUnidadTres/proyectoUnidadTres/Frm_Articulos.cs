@@ -89,6 +89,29 @@ namespace proyectoUnidadTres{
             dgvCategoria.DataSource = Datos.ListadoCategoria();
             this.Formato_Categoria();
         }
+        private void selecionarItemArticulo()
+        {
+            if (string.IsNullOrEmpty(Convert.ToString(
+                Dgv_Articulos.CurrentRow.Cells["codigo_ar"].Value)))
+            {
+                MessageBox.Show("Seleccione un articulo",
+                                "Alerta del sistem",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                this.nCodigo_ar = Convert.ToInt32(
+                Dgv_Articulos.CurrentRow.Cells["codigo_ar"].Value);
+                this.txtDescripcion.Text = Convert.ToString(Dgv_Articulos.CurrentRow.Cells["descripcion_ar"].Value);
+                this.txtMarca.Text = Convert.ToString(Dgv_Articulos.CurrentRow.Cells["marca_ar"].Value);
+                this.txtCategoria.Text = Convert.ToString(Dgv_Articulos.CurrentRow.Cells["descripcion_ca"].Value);
+                this.txtMedida.Text = Convert.ToString(Dgv_Articulos.CurrentRow.Cells["descripcion_me"].Value);
+                this.nCodigo_ca = Convert.ToInt32(Dgv_Articulos.CurrentRow.Cells["codigo_ca"].Value);
+                this.nCodigo_me = Convert.ToInt32(Dgv_Articulos.CurrentRow.Cells["codigo_me"].Value);
+                this.nCodigo_ar = Convert.ToInt32(Dgv_Articulos.CurrentRow.Cells["codigo_ar"].Value);
+            }
+        }
         private void selecionarItemMedida(){
             if (string.IsNullOrEmpty(Convert.ToString(
                 dgvMedida.CurrentRow.Cells["codigo_me"].Value))){
@@ -138,12 +161,39 @@ namespace proyectoUnidadTres{
 
         private void btn_eliminar_Click(object sender, EventArgs e)
         {
+            
+            if(Dgv_Articulos.Rows.Count <= 0)
+            {
 
+            MessageBox.Show("Seleccione el articulo que desea eliminar",
+                                "Alerta del sistem",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                string respuesta = "";
+                DbContextArticulo datos = new DbContextArticulo();
+                respuesta = datos.EliminarArticulo(nCodigo_ar);
+                if (respuesta.Equals("ok"))
+                {
+                    this.listadoArticulos("%");
+                    this.Limpiar_texto();
+                    nCodigo_ar = 0;
+                    nCodigo_me = 0;
+                    nCodigo_ca = 0;
+                    MessageBox.Show("Se elimino el registro",
+                    "Alerta del sistem",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                }
+            }
         }
 
         private void btn_reporte_Click(object sender, EventArgs e)
         {
-
+            Reportes.formReporteArticulo frmReport = new Reportes.formReporteArticulo();
+            frmReport.ShowDialog();
         }
 
         private void btnAgregar_Click(object sender, EventArgs e){
@@ -166,12 +216,16 @@ namespace proyectoUnidadTres{
             nCodigo_ca = 0;
         }
         private void btn_actualizar_Click(object sender, EventArgs e){
+            this.Estado_texto(true);
+            this.Estado_botones_proceso(true);
+            this.Estado_botones_principales(false);
+            this.txtDescripcion.Focus();
             nEstadoRegistro = 2;
         }
 
         private void btn_salir_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
 
         private void Frm_Aeticulos_Load(object sender, EventArgs e){
@@ -245,6 +299,16 @@ namespace proyectoUnidadTres{
         private void btn_retornar_categoria_Click(object sender, EventArgs e)
         {
             panelCategoria.Visible = false;
+        }
+
+        private void Dgv_Articulos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            this.selecionarItemArticulo();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            this.listadoArticulos(this.txtBuscar.Text.Trim());
         }
     }
 }

@@ -62,7 +62,31 @@ namespace proyectoUnidadTres.Logica
                 if (sqlCon.State == ConnectionState.Open) sqlCon.Close();
             }
         }
-
+        public string EliminarArticulo(int param)
+        {
+            SqlConnection sqlCon = new SqlConnection();
+            string resultado = "";
+            string sentencia = "";
+            try
+            {
+                sqlCon = Conexion.getConexion().CrearConexion();
+                sentencia = "DELETE FROM tb_articulos " +
+                               "WHERE codigo_ar = @codigo_ar;";
+                SqlCommand comando = new SqlCommand(sentencia, sqlCon);
+                comando.Parameters.AddWithValue("@codigo_ar", param);
+                sqlCon.Open();
+                resultado = comando.ExecuteNonQuery() >= 1 ? "ok" : "Error al eliminar";
+                return resultado;
+            }
+            catch (Exception ex)
+            {
+                return resultado = ex.Message;
+            }
+            finally
+            {
+                if (sqlCon.State == ConnectionState.Open) sqlCon.Close();
+            }
+        }
         public DataTable ListadoMedida(){
             DataTable table = new DataTable();
             SqlConnection sqlCon = new SqlConnection();

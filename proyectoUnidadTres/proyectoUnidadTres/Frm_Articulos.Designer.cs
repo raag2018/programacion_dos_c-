@@ -37,9 +37,18 @@
             this.btn_reporte = new System.Windows.Forms.Button();
             this.btn_salir = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panelCategoria = new System.Windows.Forms.FlowLayoutPanel();
+            this.dgvCategoria = new System.Windows.Forms.DataGridView();
+            this.btn_retornar_categoria = new System.Windows.Forms.Button();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.button3 = new System.Windows.Forms.Button();
             this.panelMedida = new System.Windows.Forms.FlowLayoutPanel();
             this.dgvMedida = new System.Windows.Forms.DataGridView();
             this.btnRetornarMedida = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             this.btn_guardar = new System.Windows.Forms.Button();
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.btn_buscar_categoria = new System.Windows.Forms.Button();
@@ -57,26 +66,17 @@
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Dgv_Articulos = new System.Windows.Forms.DataGridView();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panelCategoria = new System.Windows.Forms.FlowLayoutPanel();
-            this.dgvCategoria = new System.Windows.Forms.DataGridView();
-            this.btn_retornar_categoria = new System.Windows.Forms.Button();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            this.panelMedida.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMedida)).BeginInit();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Articulos)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panelCategoria.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategoria)).BeginInit();
             this.flowLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.panelMedida.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMedida)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Articulos)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAgregar
@@ -194,6 +194,81 @@
             this.groupBox1.Text = "Nuevo Articulo";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // panelCategoria
+            // 
+            this.panelCategoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panelCategoria.Controls.Add(this.dgvCategoria);
+            this.panelCategoria.Controls.Add(this.btn_retornar_categoria);
+            this.panelCategoria.Controls.Add(this.flowLayoutPanel3);
+            this.panelCategoria.Location = new System.Drawing.Point(254, 316);
+            this.panelCategoria.Name = "panelCategoria";
+            this.panelCategoria.Size = new System.Drawing.Size(192, 234);
+            this.panelCategoria.TabIndex = 29;
+            this.panelCategoria.Visible = false;
+            // 
+            // dgvCategoria
+            // 
+            this.dgvCategoria.AllowUserToAddRows = false;
+            this.dgvCategoria.AllowUserToDeleteRows = false;
+            this.dgvCategoria.AllowUserToOrderColumns = true;
+            this.dgvCategoria.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvCategoria.ColumnHeadersHeight = 34;
+            this.dgvCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvCategoria.Location = new System.Drawing.Point(3, 3);
+            this.dgvCategoria.Name = "dgvCategoria";
+            this.dgvCategoria.ReadOnly = true;
+            this.dgvCategoria.Size = new System.Drawing.Size(179, 188);
+            this.dgvCategoria.TabIndex = 0;
+            this.dgvCategoria.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategoria_CellDoubleClick);
+            // 
+            // btn_retornar_categoria
+            // 
+            this.btn_retornar_categoria.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_retornar_categoria.ForeColor = System.Drawing.Color.Red;
+            this.btn_retornar_categoria.Location = new System.Drawing.Point(3, 197);
+            this.btn_retornar_categoria.Name = "btn_retornar_categoria";
+            this.btn_retornar_categoria.Size = new System.Drawing.Size(179, 28);
+            this.btn_retornar_categoria.TabIndex = 8;
+            this.btn_retornar_categoria.Text = "Retornar";
+            this.btn_retornar_categoria.UseVisualStyleBackColor = true;
+            this.btn_retornar_categoria.Click += new System.EventHandler(this.btn_retornar_categoria_Click);
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.flowLayoutPanel3.Controls.Add(this.dataGridView3);
+            this.flowLayoutPanel3.Controls.Add(this.button3);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 231);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(192, 234);
+            this.flowLayoutPanel3.TabIndex = 21;
+            this.flowLayoutPanel3.Visible = false;
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AllowUserToAddRows = false;
+            this.dataGridView3.AllowUserToDeleteRows = false;
+            this.dataGridView3.AllowUserToOrderColumns = true;
+            this.dataGridView3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dataGridView3.ColumnHeadersHeight = 34;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridView3.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.ReadOnly = true;
+            this.dataGridView3.Size = new System.Drawing.Size(179, 188);
+            this.dataGridView3.TabIndex = 0;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.Red;
+            this.button3.Location = new System.Drawing.Point(3, 197);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(179, 28);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "Retornar";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // panelMedida
             // 
             this.panelMedida.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -233,6 +308,42 @@
             this.btnRetornarMedida.Text = "Retornar";
             this.btnRetornarMedida.UseVisualStyleBackColor = true;
             this.btnRetornarMedida.Click += new System.EventHandler(this.btnRetornarMedida_Click);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.flowLayoutPanel1.Controls.Add(this.dataGridView1);
+            this.flowLayoutPanel1.Controls.Add(this.button1);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 231);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(192, 234);
+            this.flowLayoutPanel1.TabIndex = 21;
+            this.flowLayoutPanel1.Visible = false;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dataGridView1.ColumnHeadersHeight = 34;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(179, 188);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Red;
+            this.button1.Location = new System.Drawing.Point(3, 197);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(179, 28);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Retornar";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // btn_guardar
             // 
@@ -382,6 +493,7 @@
             this.btnBuscar.TabIndex = 7;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // txtBuscar
             // 
@@ -412,117 +524,7 @@
             this.Dgv_Articulos.ReadOnly = true;
             this.Dgv_Articulos.Size = new System.Drawing.Size(687, 282);
             this.Dgv_Articulos.TabIndex = 4;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.flowLayoutPanel1.Controls.Add(this.dataGridView1);
-            this.flowLayoutPanel1.Controls.Add(this.button1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 231);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(192, 234);
-            this.flowLayoutPanel1.TabIndex = 21;
-            this.flowLayoutPanel1.Visible = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dataGridView1.ColumnHeadersHeight = 34;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(179, 188);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(3, 197);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(179, 28);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Retornar";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // panelCategoria
-            // 
-            this.panelCategoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.panelCategoria.Controls.Add(this.dgvCategoria);
-            this.panelCategoria.Controls.Add(this.btn_retornar_categoria);
-            this.panelCategoria.Controls.Add(this.flowLayoutPanel3);
-            this.panelCategoria.Location = new System.Drawing.Point(254, 316);
-            this.panelCategoria.Name = "panelCategoria";
-            this.panelCategoria.Size = new System.Drawing.Size(192, 234);
-            this.panelCategoria.TabIndex = 29;
-            this.panelCategoria.Visible = false;
-            // 
-            // dgvCategoria
-            // 
-            this.dgvCategoria.AllowUserToAddRows = false;
-            this.dgvCategoria.AllowUserToDeleteRows = false;
-            this.dgvCategoria.AllowUserToOrderColumns = true;
-            this.dgvCategoria.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dgvCategoria.ColumnHeadersHeight = 34;
-            this.dgvCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvCategoria.Location = new System.Drawing.Point(3, 3);
-            this.dgvCategoria.Name = "dgvCategoria";
-            this.dgvCategoria.ReadOnly = true;
-            this.dgvCategoria.Size = new System.Drawing.Size(179, 188);
-            this.dgvCategoria.TabIndex = 0;
-            this.dgvCategoria.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategoria_CellDoubleClick);
-            // 
-            // btn_retornar_categoria
-            // 
-            this.btn_retornar_categoria.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_retornar_categoria.ForeColor = System.Drawing.Color.Red;
-            this.btn_retornar_categoria.Location = new System.Drawing.Point(3, 197);
-            this.btn_retornar_categoria.Name = "btn_retornar_categoria";
-            this.btn_retornar_categoria.Size = new System.Drawing.Size(179, 28);
-            this.btn_retornar_categoria.TabIndex = 8;
-            this.btn_retornar_categoria.Text = "Retornar";
-            this.btn_retornar_categoria.UseVisualStyleBackColor = true;
-            this.btn_retornar_categoria.Click += new System.EventHandler(this.btn_retornar_categoria_Click);
-            // 
-            // flowLayoutPanel3
-            // 
-            this.flowLayoutPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.flowLayoutPanel3.Controls.Add(this.dataGridView3);
-            this.flowLayoutPanel3.Controls.Add(this.button3);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 231);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(192, 234);
-            this.flowLayoutPanel3.TabIndex = 21;
-            this.flowLayoutPanel3.Visible = false;
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.AllowUserToAddRows = false;
-            this.dataGridView3.AllowUserToDeleteRows = false;
-            this.dataGridView3.AllowUserToOrderColumns = true;
-            this.dataGridView3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dataGridView3.ColumnHeadersHeight = 34;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridView3.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.ReadOnly = true;
-            this.dataGridView3.Size = new System.Drawing.Size(179, 188);
-            this.dataGridView3.TabIndex = 0;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Red;
-            this.button3.Location = new System.Drawing.Point(3, 197);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(179, 28);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Retornar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Dgv_Articulos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_Articulos_CellDoubleClick);
             // 
             // Frm_Articulos
             // 
@@ -543,17 +545,17 @@
             this.Load += new System.EventHandler(this.Frm_Aeticulos_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.panelMedida.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMedida)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Articulos)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panelCategoria.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategoria)).EndInit();
             this.flowLayoutPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.panelMedida.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMedida)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Articulos)).EndInit();
             this.ResumeLayout(false);
 
         }
