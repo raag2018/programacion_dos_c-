@@ -63,10 +63,61 @@ namespace proyectoUnidadTres{
             Dgv_Articulos.Columns[5].Visible = false;
             Dgv_Articulos.Columns[6].Visible = false;
         }
+        private void Formato_Medida(){
+            dgvMedida.Columns[0].Width = 130;
+            dgvMedida.Columns[0].HeaderText = "MEDIDA";
+            dgvMedida.Columns[1].Visible = false;
+        }
+        private void Formato_Categoria()
+        {
+            dgvCategoria.Columns[0].Width = 130;
+            dgvCategoria.Columns[0].HeaderText = "CATEGORIA";
+            dgvCategoria.Columns[1].Visible = false;
+        }
         private void listadoArticulos(string param){
             DbContextArticulo Datos = new DbContextArticulo();
             Dgv_Articulos.DataSource = Datos.ListadoArticulos(param);
             this.Formato_Articulo();
+        }
+        private void listadoMedidas(){
+            DbContextArticulo Datos = new DbContextArticulo();
+            dgvMedida.DataSource = Datos.ListadoMedida();
+            this.Formato_Medida();
+        }
+        private void listadoCategoria(){
+            DbContextArticulo Datos = new DbContextArticulo();
+            dgvCategoria.DataSource = Datos.ListadoCategoria();
+            this.Formato_Categoria();
+        }
+        private void selecionarItemMedida(){
+            if (string.IsNullOrEmpty(Convert.ToString(
+                dgvMedida.CurrentRow.Cells["codigo_me"].Value))){
+                MessageBox.Show("Seleccione una medida",
+                                "Alerta del sistem",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Exclamation);
+            }else{
+                this.nCodigo_me = Convert.ToInt32(
+                dgvMedida.CurrentRow.Cells["codigo_me"].Value);
+                this.txtMedida.Text = Convert.ToString(dgvMedida.CurrentRow.Cells["descripcion_me"].Value);
+            }
+        }
+        private void selecionarItemCategoria()
+        {
+            if (string.IsNullOrEmpty(Convert.ToString(
+                dgvCategoria.CurrentRow.Cells["codigo_ca"].Value)))
+            {
+                MessageBox.Show("Seleccione una categoria",
+                                "Alerta del sistem",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                this.nCodigo_ca = Convert.ToInt32(
+                dgvCategoria.CurrentRow.Cells["codigo_ca"].Value);
+                this.txtCategoria.Text = Convert.ToString(dgvCategoria.CurrentRow.Cells["descripcion_ca"].Value);
+            }
         }
         #endregion
 
@@ -109,6 +160,10 @@ namespace proyectoUnidadTres{
             this.Limpiar_texto();
             this.Estado_botones_proceso(false);
             this.Estado_botones_principales(true);
+            nEstadoRegistro = 0;
+            nCodigo_ar = 0;
+            nCodigo_me = 0;
+            nCodigo_ca = 0;
         }
         private void btn_actualizar_Click(object sender, EventArgs e){
             nEstadoRegistro = 2;
@@ -121,6 +176,8 @@ namespace proyectoUnidadTres{
 
         private void Frm_Aeticulos_Load(object sender, EventArgs e){
             this.listadoArticulos("%");
+            this.listadoMedidas();
+            this.listadoCategoria();
         }
 
         private void btn_guardar_Click(object sender, EventArgs e)
@@ -130,17 +187,64 @@ namespace proyectoUnidadTres{
             art.codigo_ar = nCodigo_ar;
             art.descripcion_ar = txtDescripcion.Text.Trim();
             art.marca_ar = txtMarca.Text.Trim();
-            art.codigo_me = 1;
-            art.codigo_ca = 1;
+            art.codigo_me = this.nCodigo_me;
+            art.codigo_ca = this.nCodigo_ca;
             DbContextArticulo db = new DbContextArticulo();
-            respuesta = db.registrosArtituclo(nEstadoRegistro, art);
+            respuesta = db.RegistrosArticulo(nEstadoRegistro, art);
             if (respuesta.Equals("ok")){
                 this.listadoArticulos("%");
+                this.Estado_texto(false);
+                this.Limpiar_texto();
+                this.Estado_botones_proceso(false);
+                this.Estado_botones_principales(true);
+                nEstadoRegistro = 0;
+                nCodigo_ar = 0;
+                nCodigo_me = 0;
+                nCodigo_ca = 0;
                 MessageBox.Show("Registro exitos", "Aviso del sistema",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }else{
                 MessageBox.Show(respuesta);
             }
+        }
+
+        private void btn_buscar_medida_Click(object sender, EventArgs e)
+        {
+            panelMedida.Location = txtDescripcion.Location;
+            panelMedida.Visible = true;
+        }
+
+        private void btnRetornarMedida_Click(object sender, EventArgs e)
+        {
+            panelMedida.Visible = false;
+        }
+
+        private void dgvMedida_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvMedida_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            this.selecionarItemMedida();
+            panelMedida.Visible=false;
+        }
+
+        private void btn_buscar_categoria_Click(object sender, EventArgs e)
+        {
+            panelCategoria.Location = txtDescripcion.Location;
+            panelCategoria.Visible = true;
+        }
+
+        private void dgvCategoria_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            this.selecionarItemCategoria();
+            panelCategoria.Visible = false;
+        }
+
+        private void btn_retornar_categoria_Click(object sender, EventArgs e)
+        {
+            panelCategoria.Visible = false;
         }
     }
 }

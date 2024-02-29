@@ -1,29 +1,38 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data.SqlClient;
-using System.Data.SQLite;
-namespace proyectoUnidadTres.Logica{
-    public class Conexion {
+
+namespace proyectoUnidadTres.Logica
+{
+    public class Conexion
+    {
         private string BaseDeDatos;
         private static Conexion Con = null;
-        private Conexion(){
-            this.BaseDeDatos = "./db_tarea.db";
+
+        private Conexion()
+        {
+            // Aquí debes especificar la cadena de conexión a tu servidor SQL Server
+            this.BaseDeDatos = "Data Source=ROBERT\\UNAB;Initial Catalog=db_tarea;User ID=sa;Password=unab;TrustServerCertificate=True";
         }
-        public SQLiteConnection CrearConexion(){
-            SQLiteConnection Cadena = new SQLiteConnection();
-            try{
-                Cadena.ConnectionString = "Data Source = "+this.BaseDeDatos;
-            }catch(Exception ex){
-                Cadena = null;
+
+        public SqlConnection CrearConexion()
+        {
+            SqlConnection conexion = new SqlConnection();
+            try
+            {
+                conexion.ConnectionString = this.BaseDeDatos;
+            }
+            catch (Exception ex)
+            {
+                conexion = null;
                 throw ex;
             }
-            return Cadena;
+            return conexion;
         }
-        public static Conexion getConexion(){
-            if(Con == null){
+
+        public static Conexion getConexion()
+        {
+            if (Con == null)
+            {
                 Con = new Conexion();
             }
             return Con;

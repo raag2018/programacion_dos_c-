@@ -1,59 +1,108 @@
 ﻿using proyectoUnidadTres.Model;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Data.Entity;
-using System.Data.SQLite;
-using System.Linq;
-using static System.Net.Mime.MediaTypeNames;
-namespace proyectoUnidadTres.Logica{
+using System.Data.SqlClient;
+
+namespace proyectoUnidadTres.Logica
+{
     public class DbContextArticulo{
         public DataTable ListadoArticulos(string param){
-            SQLiteDataReader resultado;
             DataTable table = new DataTable();
-            SQLiteConnection SqlCon = new SQLiteConnection();
+            SqlConnection sqlCon = new SqlConnection();
             try{
-                SqlCon = Conexion.getConexion().CrearConexion();
-                param = "%"+param.Trim()+"%";
+                sqlCon = Conexion.getConexion().CrearConexion();
+                param = "%" + param.Trim() + "%";
                 string sentencia = "select a.codigo_ar, a.descripcion_ar, a.marca_ar, c.descripcion_ca," +
                     "b.descripcion_me, c.codigo_ca, b.codigo_me from tb_articulos a " +
                     "inner join tb_categoria c on c.codigo_ca = a.codigo_ca " +
                     "inner join tb_medida b on b.codigo_me = a.codigo_me " +
-                    "where a.descripcion_ar like '"+param+"';";
-                SQLiteCommand comando = new SQLiteCommand(sentencia, SqlCon);
-                SqlCon.Open();
-                resultado = comando.ExecuteReader();
+                    "where a.descripcion_ar like @param;";
+
+                SqlCommand comando = new SqlCommand(sentencia, sqlCon);
+                comando.Parameters.AddWithValue("@param", param);
+
+                sqlCon.Open();
+                SqlDataReader resultado = comando.ExecuteReader();
                 table.Load(resultado);
                 return table;
             }catch (Exception ex){
-                throw ex;
+                throw new Exception("Error al conectar a la base de datos: " + ex.Message);
             }finally{
-                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+                if (sqlCon.State == ConnectionState.Open) sqlCon.Close();
             }
         }
-        public string registrosArtituclo(int param, Articulo articulo){
-            SQLiteConnection SqlCon = new SQLiteConnection();
+
+        public string RegistrosArticulo(int param, Articulo articulo){
+            SqlConnection sqlCon = new SqlConnection();
             string resultado = "";
             string sentencia = "";
             try{
+                sqlCon = Conexion.getConexion().CrearConexion();
                 if (param == 1){
-                    sentencia = "insert into " +
-                        "tb_articulos(descripcion_ar, marca_ar, codigo_me, codigo_ca)" +
-                        " values('"+articulo.descripcion_ar+"', '"+articulo.marca_ar+"', " +
-                        "'"+articulo.codigo_me+"', '"+articulo.codigo_ca+"');";
-                }else if(param == 2){
-                    sentencia = "update tb_articulo set where ";
+                    sentencia = "INSERT INTO tb_articulos (descripcion_ar, marca_ar, codigo_me, codigo_ca) " +
+                                "VALUES (@descripcion_ar, @marca_ar, @codigo_me, @codigo_ca);";
+                }else if (param == 2){
+                    sentencia = "UPDATE tb_articulos SET descripcion_ar = @descripcion_ar, " +
+                                "marca_ar = @marca_ar, codigo_me = @codigo_me, codigo_ca = @codigo_ca " +
+                                "WHERE codigo_ar = @codigo_ar;";
                 }
-                
-                SqlCon = Conexion.getConexion().CrearConexion();
-                SQLiteCommand comando = new SQLiteCommand(sentencia, SqlCon);
-                SqlCon.Open();
+                SqlCommand comando = new SqlCommand(sentencia, sqlCon);
+                comando.Parameters.AddWithValue("@descripcion_ar", articulo.descripcion_ar);
+                comando.Parameters.AddWithValue("@marca_ar", articulo.marca_ar);
+                comando.Parameters.AddWithValue("@codigo_me", articulo.codigo_me);
+                comando.Parameters.AddWithValue("@codigo_ca", articulo.codigo_ca);
+                comando.Parameters.AddWithValue("@codigo_ar", articulo.codigo_ar);
+
+                sqlCon.Open();
                 resultado = comando.ExecuteNonQuery() >= 1 ? "ok" : "Error al registrar";
                 return resultado;
             }catch (Exception ex){
-               return resultado =  ex.Message;
+                return resultado = ex.Message;
             }finally{
-                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+                if (sqlCon.State == ConnectionState.Open) sqlCon.Close();
+            }
+        }
+
+        public DataTable ListadoMedida(){
+            DataTable table = new DataTable();
+            SqlConnection sqlCon = new SqlConnection();
+            try{
+                sqlCon = Conexion.getConexion().CrearConexion();
+                string sentencia = "select  descripcion_me, codigo_me" +
+                    " from tb_medida; ";
+                SqlCommand comando = new SqlCommand(sentencia, sqlCon);
+                sqlCon.Open();
+                SqlDataReader resultado = comando.ExecuteReader();
+                table.Load(resultado);
+                return table;
+            }catch (Exception ex){
+                throw new Exception("Error al consultar tabla: " + ex.Message);
+            }finally{
+                if (sqlCon.State == ConnectionState.Open) sqlCon.Close();
+            }
+        }
+        public DataTable ListadoCategoria()
+        {
+            DataTable table = new DataTable();
+            SqlConnection sqlCon = new SqlConnection();
+            try
+            {
+                sqlCon = Conexion.getConexion().CrearConexion();
+                string sentencia = "select  descripcion_ca, codigo_ca" +
+                    " from tb_categoria; ";
+                SqlCommand comando = new SqlCommand(sentencia, sqlCon);
+                sqlCon.Open();
+                SqlDataReader resultado = comando.ExecuteReader();
+                table.Load(resultado);
+                return table;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al consultar tabla: " + ex.Message);
+            }
+            finally
+            {
+                if (sqlCon.State == ConnectionState.Open) sqlCon.Close();
             }
         }
     }
