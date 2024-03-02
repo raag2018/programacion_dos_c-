@@ -1,0 +1,17 @@
+C:\Users\rober\source\repos\MultiHilos\MultiHilos\bin\Debug\net8.0-windows\MultiHilos.exe
+C:\Users\rober\source\repos\MultiHilos\MultiHilos\bin\Debug\net8.0-windows\MultiHilos.deps.json
+C:\Users\rober\source\repos\MultiHilos\MultiHilos\bin\Debug\net8.0-windows\MultiHilos.runtimeconfig.json
+C:\Users\rober\source\repos\MultiHilos\MultiHilos\bin\Debug\net8.0-windows\MultiHilos.dll
+C:\Users\rober\source\repos\MultiHilos\MultiHilos\bin\Debug\net8.0-windows\MultiHilos.pdb
+C:\Users\rober\source\repos\MultiHilos\MultiHilos\obj\Debug\net8.0-windows\MultiHilos.Form1.resources
+C:\Users\rober\source\repos\MultiHilos\MultiHilos\obj\Debug\net8.0-windows\MultiHilos.csproj.GenerateResource.cache
+C:\Users\rober\source\repos\MultiHilos\MultiHilos\obj\Debug\net8.0-windows\MultiHilos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rober\source\repos\MultiHilos\MultiHilos\obj\Debug\net8.0-windows\MultiHilos.AssemblyInfoInputs.cache
+C:\Users\rober\source\repos\MultiHilos\MultiHilos\obj\Debug\net8.0-windows\MultiHilos.AssemblyInfo.cs
+C:\Users\rober\source\repos\MultiHilos\MultiHilos\obj\Debug\net8.0-windows\MultiHilos.csproj.CoreCompileInputs.cache
+C:\Users\rober\source\repos\MultiHilos\MultiHilos\obj\Debug\net8.0-windows\MultiHilos.sourcelink.json
+C:\Users\rober\source\repos\MultiHilos\MultiHilos\obj\Debug\net8.0-windows\MultiHilos.dll
+C:\Users\rober\source\repos\MultiHilos\MultiHilos\obj\Debug\net8.0-windows\refint\MultiHilos.dll
+C:\Users\rober\source\repos\MultiHilos\MultiHilos\obj\Debug\net8.0-windows\MultiHilos.pdb
+C:\Users\rober\source\repos\MultiHilos\MultiHilos\obj\Debug\net8.0-windows\MultiHilos.genruntimeconfig.cache
+C:\Users\rober\source\repos\MultiHilos\MultiHilos\obj\Debug\net8.0-windows\ref\MultiHilos.dll

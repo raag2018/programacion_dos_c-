@@ -1,0 +1,15 @@
+C:\Users\rober\source\repos\ManejadorDeErrores\ManejadorDeErrores\bin\Debug\net8.0\ManejadorDeErrores.exe
+C:\Users\rober\source\repos\ManejadorDeErrores\ManejadorDeErrores\bin\Debug\net8.0\ManejadorDeErrores.deps.json
+C:\Users\rober\source\repos\ManejadorDeErrores\ManejadorDeErrores\bin\Debug\net8.0\ManejadorDeErrores.runtimeconfig.json
+C:\Users\rober\source\repos\ManejadorDeErrores\ManejadorDeErrores\bin\Debug\net8.0\ManejadorDeErrores.dll
+C:\Users\rober\source\repos\ManejadorDeErrores\ManejadorDeErrores\bin\Debug\net8.0\ManejadorDeErrores.pdb
+C:\Users\rober\source\repos\ManejadorDeErrores\ManejadorDeErrores\obj\Debug\net8.0\ManejadorDeErrores.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rober\source\repos\ManejadorDeErrores\ManejadorDeErrores\obj\Debug\net8.0\ManejadorDeErrores.AssemblyInfoInputs.cache
+C:\Users\rober\source\repos\ManejadorDeErrores\ManejadorDeErrores\obj\Debug\net8.0\ManejadorDeErrores.AssemblyInfo.cs
+C:\Users\rober\source\repos\ManejadorDeErrores\ManejadorDeErrores\obj\Debug\net8.0\ManejadorDeErrores.csproj.CoreCompileInputs.cache
+C:\Users\rober\source\repos\ManejadorDeErrores\ManejadorDeErrores\obj\Debug\net8.0\ManejadorDeErrores.sourcelink.json
+C:\Users\rober\source\repos\ManejadorDeErrores\ManejadorDeErrores\obj\Debug\net8.0\ManejadorDeErrores.dll
+C:\Users\rober\source\repos\ManejadorDeErrores\ManejadorDeErrores\obj\Debug\net8.0\refint\ManejadorDeErrores.dll
+C:\Users\rober\source\repos\ManejadorDeErrores\ManejadorDeErrores\obj\Debug\net8.0\ManejadorDeErrores.pdb
+C:\Users\rober\source\repos\ManejadorDeErrores\ManejadorDeErrores\obj\Debug\net8.0\ManejadorDeErrores.genruntimeconfig.cache
+C:\Users\rober\source\repos\ManejadorDeErrores\ManejadorDeErrores\obj\Debug\net8.0\ref\ManejadorDeErrores.dll
