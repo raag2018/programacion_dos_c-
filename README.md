@@ -52,4 +52,4 @@ Aplicar los elementos fundamentales en la administración de errores de las apli
 3. Creando un instalador.
 
 ---
-Este documento está sujeto a actualizaciones. Última revisión: [Fecha]
+Este documento está sujeto a actualizaciones. Última revisión: [02 de Marzo de 2024]
