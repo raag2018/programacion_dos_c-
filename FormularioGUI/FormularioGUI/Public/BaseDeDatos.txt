@@ -1,0 +1,37 @@
+﻿create database ArticulosDB;
+use ArticulosDB;
+CREATE TABLE tb_categorias (
+    id_ca INT IDENTITY(1,1) PRIMARY KEY,
+    descripcion_ca VARCHAR(30) NOT NULL,
+    estado BIT NOT NULL DEFAULT 1
+);
+CREATE PROCEDURE USP_listado_ca
+    @cTexto VARCHAR(30) = ''
+AS
+BEGIN
+    SELECT id_ca, descripcion_ca FROM tb_categorias
+    WHERE estado = 1 AND UPPER(LTRIM(RTRIM(descripcion_ca))) LIKE '%' + UPPER(LTRIM(RTRIM(@cTexto))) + '%'
+    ORDER BY id_ca;
+END;
+CREATE PROCEDURE USP_Guaedar_ca
+    @Opcion int = 0,
+	@id_ca int = 0,
+	@descripcion_ca varchar(30) = ''
+AS
+BEGIN
+	if @Opcion = 1 --Nuevo registro
+	begin
+		insert into tb_categorias(descripcion_ca) values (@descripcion_ca);
+	end;
+	else -- actualizar registro
+	begin 
+		update tb_categorias set descripcion_ca = @descripcion_ca where id_ca = @id_ca;
+	end;
+END;
+CREATE PROCEDURE USP_eliminar_ca
+    @id INT
+AS
+BEGIN
+    UPDATE tb_categorias SET estado = 0 WHERE id_ca = @id;
+END
+GO;

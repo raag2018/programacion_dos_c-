@@ -1,0 +1,9 @@
+C:\Users\rober\source\repos\FormularioGUI\Datos\bin\Debug\Datos.dll
+C:\Users\rober\source\repos\FormularioGUI\Datos\bin\Debug\Datos.pdb
+C:\Users\rober\source\repos\FormularioGUI\Datos\bin\Debug\Entidades.dll
+C:\Users\rober\source\repos\FormularioGUI\Datos\bin\Debug\Entidades.pdb
+C:\Users\rober\source\repos\FormularioGUI\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\rober\source\repos\FormularioGUI\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\rober\source\repos\FormularioGUI\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\rober\source\repos\FormularioGUI\Datos\obj\Debug\Datos.dll
+C:\Users\rober\source\repos\FormularioGUI\Datos\obj\Debug\Datos.pdb
